@@ -15,7 +15,7 @@ describe('Testes da Funcionalidade Usuários', () => {
       url: 'usuarios',
     })
   });
-  it.only('Deve cadastrar um usuário com sucesso - POST', () => {
+  it('Deve cadastrar um usuário com sucesso - POST', () => {
     const name = faker.person.firstName()
     const email = faker.internet.email();
     const senha = faker.number.binary(255)
