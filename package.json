@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run",
     "start": "npx serverest",
-    "cy:run": "npx cypress run"
+    "ci": "start-server-and-test 8080 ' cypress run --spec cypress/e2e/exercicio-api.cy.js'"
   },
   "keywords": [],
   "author": "",
