@@ -18,7 +18,6 @@ pipeline {
       }
      post {
         always {
-            // Se gerar XML JUnit, descomente a linha abaixo:
             // junit 'reports/**/*.xml'
             echo '💡 Para publicar JUnit, habilite o junit() acima.'
                 }
