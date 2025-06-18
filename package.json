@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx serverest",
+    "start": "http-server -c-1 --silent",
     "ci": "start-server-and-test 8080 ' cypress run --spec cypress/e2e/exercicio-api.cy.js'"
   },
   "keywords": [],
