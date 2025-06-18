@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -c-1 --silent",
-    "ci": "start-server-and-test 8080 ' cypress run --spec cypress/e2e/exercicio-api.cy.js'"
+    "start": "npx serverest",
+    "test": "mocha e2e/exercicio-api.cy.js",
+    "ci": "start-server-and-test start-server http://localhost:3000 test"
   },
   "keywords": [],
   "author": "",
